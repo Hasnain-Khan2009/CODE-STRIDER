@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Job application form that demonstrates every HTML input type: text, email, tel, url, password, number, range, date, time, datetime-local, month, week, color, file, search, radio, checkbox, select, datalist and textarea.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Job Application Form</title>
+</head>
+<body>
+<header><h1>Junior Web Developer — Application</h1></header>
+<main>
+<form action="#" method="post" enctype="multipart/form-data">
+  <input type="hidden" name="job_id" value="JWD-2026-014">
+
+  <fieldset>
+    <legend>1. Personal information</legend>
+    <p><label for="name">Full name</label><br><input type="text" id="name" name="name" required></p>
+    <p><label for="email">Email</label><br><input type="email" id="email" name="email" required></p>
+    <p><label for="phone">Phone</label><br><input type="tel" id="phone" name="phone" pattern="[6-9][0-9]{9}" placeholder="9876543210"></p>
+    <p><label for="dob">Date of birth</label><br><input type="date" id="dob" name="dob"></p>
+    <p><label for="pwd">Create a password</label><br><input type="password" id="pwd" name="pwd" minlength="8" required></p>
+    <p><label for="search">Search our openings</label><br><input type="search" id="search" name="search" placeholder="e.g. front-end"></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>2. Online presence</legend>
+    <p><label for="portfolio">Portfolio URL</label><br><input type="url" id="portfolio" name="portfolio" placeholder="https://"></p>
+    <p><label for="github">GitHub URL</label><br><input type="url" id="github" name="github" placeholder="https://github.com/your-username"></p>
+    <p><label for="fav">Favourite brand colour</label><br><input type="color" id="fav" name="fav" value="#0f766e"></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>3. Experience and skills</legend>
+    <p><label for="years">Years of experience</label><br><input type="number" id="years" name="years" min="0" max="40" step="0.5" value="0"></p>
+    <p><label for="level">Self-rated HTML/CSS level: <output id="lv">5</output>/10</label><br>
+       <input type="range" id="level" name="level" min="1" max="10" value="5" oninput="lv.value=this.value"></p>
+    <p><label for="role">Preferred role</label><br>
+       <input list="roles" id="role" name="role" placeholder="Start typing…">
+       <datalist id="roles"><option value="Front-end developer"><option value="UI designer"><option value="QA tester"><option value="Content developer"></datalist></p>
+    <p><label for="city">Preferred work location</label><br>
+       <select id="city" name="city">
+         <optgroup label="North"><option>Delhi NCR</option><option>Lucknow</option></optgroup>
+         <optgroup label="South"><option>Bengaluru</option><option>Hyderabad</option></optgroup>
+         <optgroup label="Remote"><option>Work from home</option></optgroup>
+       </select></p>
+    <p>Work type<br>
+       <input type="radio" id="ft" name="type" value="full" checked><label for="ft"> Full-time</label>
+       <input type="radio" id="in" name="type" value="intern"><label for="in"> Internship</label>
+       <input type="radio" id="pt" name="type" value="part"><label for="pt"> Part-time</label></p>
+    <p>Skills<br>
+       <input type="checkbox" id="s1" name="skills" value="html"><label for="s1"> HTML</label>
+       <input type="checkbox" id="s2" name="skills" value="css"><label for="s2"> CSS</label>
+       <input type="checkbox" id="s3" name="skills" value="git"><label for="s3"> Git</label>
+       <input type="checkbox" id="s4" name="skills" value="py"><label for="s4"> Python</label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>4. Availability</legend>
+    <p><label for="start">Earliest start month</label><br><input type="month" id="start" name="start"></p>
+    <p><label for="week">Preferred joining week</label><br><input type="week" id="week" name="week"></p>
+    <p><label for="slot">Interview slot</label><br><input type="datetime-local" id="slot" name="slot"></p>
+    <p><label for="call">Best time for a call</label><br><input type="time" id="call" name="call" min="09:00" max="18:00"></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>5. Documents and message</legend>
+    <p><label for="cv">Upload CV (PDF)</label><br><input type="file" id="cv" name="cv" accept=".pdf" required></p>
+    <p><label for="photos">Certificates (images, multiple)</label><br><input type="file" id="photos" name="photos" accept="image/*" multiple></p>
+    <p><label for="why">Why should we hire you?</label><br><textarea id="why" name="why" rows="5" cols="30" maxlength="500"></textarea></p>
+    <p><input type="checkbox" id="agree" name="agree" required><label for="agree"> I agree that the information is correct.</label></p>
+  </fieldset>
+
+  <p>
+    <input type="submit" value="Submit application">
+    <input type="reset" value="Reset">
+    <button type="button" onclick="window.print()">Print form</button>
+  </p>
+</form>
+</main>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The same store page after the responsiveness audit: viewport meta, fluid layout, wrapping cards and a scrollable table.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>TrailMart — AFTER (responsive)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#">TrailMart</a>
+  <nav aria-label="Main"><a href="#">Shop</a> <a href="#">Sizes</a> <a href="#">Help</a> <a href="#">Contact</a></nav>
+</header>
+
+<section class="hero">
+  <h1>Autumn sale: up to 40% off</h1>
+  <p>Jackets, boots and backpacks for the trails you actually walk.</p>
+  <a class="btn" href="#">Shop now</a>
+</section>
+
+<section class="products">
+  <h2>Best sellers</h2>
+  <div class="product"><h3>Rain Jacket</h3><p>₹1,899</p></div>
+  <div class="product"><h3>Trail Boots</h3><p>₹3,299</p></div>
+  <div class="product"><h3>Day Backpack</h3><p>₹1,299</p></div>
+</section>
+
+<section class="sizes">
+  <h2>Jacket size guide</h2>
+  <div class="table-wrap" role="region" aria-label="Size chart, scrollable" tabindex="0"><table>
+    <thead><tr><th>Size</th><th>Chest (in)</th><th>Waist (in)</th><th>Hip (in)</th><th>Sleeve (in)</th><th>Length (in)</th><th>Weight (g)</th></tr></thead>
+    <tbody>
+      <tr><td>S</td><td>36</td><td>30</td><td>37</td><td>32</td><td>27</td><td>420</td></tr>
+      <tr><td>M</td><td>38</td><td>32</td><td>39</td><td>33</td><td>28</td><td>440</td></tr>
+      <tr><td>L</td><td>40</td><td>34</td><td>41</td><td>34</td><td>29</td><td>460</td></tr>
+    </tbody>
+  </table></div>
+  <img class="banner" src="images/banner.svg" alt="Wide teal banner with white bars showing autumn trail activity" width="900" height="240">
+</section>
+
+<section class="news">
+  <h2>Get sale alerts</h2>
+  <form action="#" method="post"><label for="em">Email</label><br><input class="wide-input" type="email" id="em" name="em"> <button type="submit">Subscribe</button></form>
+</section>
+
+<footer class="footer"><p>&copy; 2026 TrailMart practice store</p></footer>
+</body>
+</html>

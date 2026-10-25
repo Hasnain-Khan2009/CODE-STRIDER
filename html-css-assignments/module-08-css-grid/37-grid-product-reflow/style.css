@@ -1,0 +1,18 @@
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.6;color:#1e293b;background:#f8fafc}
+img{max-width:100%;height:auto;display:block}
+a{color:#0f766e}
+
+.top{text-align:center;padding:2rem 1rem 1rem}
+.top h1{margin:0}
+main{max-width:1150px;margin:0 auto;padding:1rem}
+/* auto-fit + minmax: as many 220px-minimum columns as fit, then stretch to share leftover space.
+   min(100%,220px) stops a single column from overflowing very narrow screens. */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1.25rem;margin:0;padding:0;list-style:none}
+.card{display:grid;grid-template-rows:auto 1fr auto auto;gap:.4rem;padding:1rem;background:#fff;border:1px solid #e2e8f0;border-radius:14px}
+.card__img{display:grid;place-items:center;height:130px;border-radius:10px;background:#ccfbf1;font-size:3.2rem}
+.card h2{margin:.5rem 0 0;font-size:1.05rem}
+.price{margin:0;font-weight:800;color:#0f766e}
+button{padding:.55rem;border:0;border-radius:8px;background:#0f766e;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+button:hover{background:#115e59}
+button:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}

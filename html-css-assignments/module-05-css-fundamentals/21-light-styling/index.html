@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student registration form using text, email, tel, date, radio, checkbox, select, number, textarea and password inputs with validation.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><h1>Student Registration</h1><p>BCA (AI) — Academic year 2026–27</p></header>
+<main>
+<form action="#" method="post" class="reg-form">
+  <fieldset>
+    <legend>Personal details</legend>
+    <p><label for="fullname">Full name</label><br>
+       <input type="text" id="fullname" name="fullname" placeholder="e.g. Aarav Sharma" required autocomplete="name"></p>
+    <p><label for="enroll">Enrollment number</label><br>
+       <input type="text" id="enroll" name="enroll" pattern="[A-Za-z0-9]{6,12}" title="6 to 12 letters or digits" required></p>
+    <p><label for="email">Email address</label><br>
+       <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"></p>
+    <p><label for="mobile">Mobile number</label><br>
+       <input type="tel" id="mobile" name="mobile" pattern="[6-9][0-9]{9}" title="10-digit Indian mobile number" placeholder="9876543210" required></p>
+    <p><label for="dob">Date of birth</label><br>
+       <input type="date" id="dob" name="dob" required></p>
+    <p>Gender<br>
+       <input type="radio" id="g-m" name="gender" value="male"><label for="g-m"> Male</label>
+       <input type="radio" id="g-f" name="gender" value="female"><label for="g-f"> Female</label>
+       <input type="radio" id="g-o" name="gender" value="other"><label for="g-o"> Other</label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Course details</legend>
+    <p><label for="course">Course</label><br>
+       <select id="course" name="course" required>
+         <option value="">-- Select a course --</option>
+         <option value="bca-ai" selected>BCA (Artificial Intelligence)</option>
+         <option value="bca">BCA</option>
+         <option value="bsc-cs">B.Sc. Computer Science</option>
+       </select></p>
+    <p><label for="semester">Semester</label><br>
+       <input type="number" id="semester" name="semester" min="1" max="6" value="1" required></p>
+    <p>Interests<br>
+       <input type="checkbox" id="i-web" name="interests" value="web"><label for="i-web"> Web development</label>
+       <input type="checkbox" id="i-ai" name="interests" value="ai"><label for="i-ai"> Artificial intelligence</label>
+       <input type="checkbox" id="i-data" name="interests" value="data"><label for="i-data"> Data science</label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Account</legend>
+    <p><label for="address">Address</label><br>
+       <textarea id="address" name="address" rows="3" cols="30" placeholder="House no., street, city, PIN"></textarea></p>
+    <p><label for="password">Password (min 8 characters)</label><br>
+       <input type="password" id="password" name="password" minlength="8" required autocomplete="new-password"></p>
+    <p><input type="checkbox" id="terms" name="terms" required><label for="terms"> I confirm the details above are correct.</label></p>
+  </fieldset>
+
+  <p><button type="submit">Register</button> <button type="reset">Clear form</button></p>
+</form>
+</main>
+</body>
+</html>

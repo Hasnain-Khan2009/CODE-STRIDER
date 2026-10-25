@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop layout built with CSS Grid: full-width header and footer, a filter sidebar and an auto-filling product grid that stacks on mobile.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Product Grid with Header and Sidebar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shop">
+  <header class="shop__header">
+    <a class="logo" href="#">TrailMart</a>
+    <form class="search" role="search" action="#"><label class="sr" for="q">Search products</label><input type="search" id="q" name="q" placeholder="Search products"><button type="submit">Search</button></form>
+    <a class="cart" href="#">Cart (0)</a>
+  </header>
+
+  <aside class="shop__sidebar" aria-label="Filters">
+    <h2>Filters</h2>
+    <form action="#">
+      <fieldset>
+        <legend>Category</legend>
+        <p><input type="checkbox" id="c1" checked><label for="c1"> Footwear</label></p>
+        <p><input type="checkbox" id="c2" checked><label for="c2"> Clothing</label></p>
+        <p><input type="checkbox" id="c3"><label for="c3"> Accessories</label></p>
+      </fieldset>
+      <fieldset>
+        <legend>Max price</legend>
+        <input type="range" id="price" min="200" max="4000" step="100" value="3500"><label class="sr" for="price">Maximum price</label>
+      </fieldset>
+      <button type="submit">Apply filters</button>
+    </form>
+  </aside>
+
+  <main class="shop__main">
+    <h1>All products <span class="muted">(8)</span></h1>
+    <ul class="items">
+    <li class="item"><div class="item__img" aria-hidden="true">👟</div><h3>Running Shoes</h3><p class="muted">Footwear</p><p class="price">₹2,499</p></li>
+    <li class="item"><div class="item__img" aria-hidden="true">👕</div><h3>Cotton T-Shirt</h3><p class="muted">Clothing</p><p class="price">₹599</p></li>
+    <li class="item"><div class="item__img" aria-hidden="true">🧢</div><h3>Baseball Cap</h3><p class="muted">Accessories</p><p class="price">₹349</p></li>
+    <li class="item"><div class="item__img" aria-hidden="true">🎒</div><h3>Day Backpack</h3><p class="muted">Accessories</p><p class="price">₹1,299</p></li>
+    <li class="item"><div class="item__img" aria-hidden="true">🧥</div><h3>Rain Jacket</h3><p class="muted">Clothing</p><p class="price">₹1,899</p></li>
+    <li class="item"><div class="item__img" aria-hidden="true">🕶️</div><h3>Sunglasses</h3><p class="muted">Accessories</p><p class="price">₹799</p></li>
+    <li class="item"><div class="item__img" aria-hidden="true">🥾</div><h3>Trail Boots</h3><p class="muted">Footwear</p><p class="price">₹3,299</p></li>
+    <li class="item"><div class="item__img" aria-hidden="true">🧦</div><h3>Sports Socks (3)</h3><p class="muted">Clothing</p><p class="price">₹249</p></li>
+    </ul>
+  </main>
+
+  <footer class="shop__footer"><p>&copy; 2026 TrailMart practice store</p></footer>
+</div>
+</body>
+</html>

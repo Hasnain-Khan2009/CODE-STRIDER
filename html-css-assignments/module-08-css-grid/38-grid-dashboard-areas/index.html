@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admin dashboard layout using grid-template-areas for header, sidebar, stats, chart, orders and footer, with three responsive layouts.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Dashboard — Named Grid Areas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="dash">
+  <header class="dash__header"><h1>Sales dashboard</h1><p>Week 43</p></header>
+
+  <nav class="dash__side" aria-label="Dashboard">
+    <ul>
+      <li><a href="#" aria-current="page">Overview</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Customers</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </nav>
+
+  <section class="dash__stats" aria-label="Key numbers">
+    <article class="stat"><h2>Revenue</h2><p>₹84,200</p></article>
+    <article class="stat"><h2>Orders</h2><p>312</p></article>
+    <article class="stat"><h2>Customers</h2><p>1,208</p></article>
+    <article class="stat"><h2>Returns</h2><p>2.4%</p></article>
+  </section>
+
+  <section class="dash__chart panel">
+    <h2>Orders this week</h2>
+    <ol class="bars"><li style="--h:45%"><span>M</span></li><li style="--h:70%"><span>T</span></li><li style="--h:55%"><span>W</span></li><li style="--h:90%"><span>T</span></li><li style="--h:65%"><span>F</span></li><li style="--h:30%"><span>S</span></li><li style="--h:50%"><span>S</span></li></ol>
+  </section>
+
+  <section class="dash__orders panel">
+    <h2>Recent orders</h2>
+    <table>
+      <thead><tr><th scope="col">ID</th><th scope="col">Customer</th><th scope="col">Total</th></tr></thead>
+      <tbody>
+        <tr><td>#1042</td><td>Riya</td><td>₹1,299</td></tr>
+        <tr><td>#1041</td><td>Kabir</td><td>₹749</td></tr>
+        <tr><td>#1040</td><td>Meera</td><td>₹2,199</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer class="dash__footer"><p>Data refreshed every 15 minutes.</p></footer>
+</div>
+</body>
+</html>

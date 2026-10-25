@@ -1,0 +1,12 @@
+/* FIXED: every change is explained in FIXES.md */
+*,*::before,*::after{box-sizing:border-box}                                  /* 1 */
+body{margin:0;font-family:Arial,sans-serif;background:#f8fafc;overflow-wrap:anywhere}  /* 6 */
+.top{background:#0f766e;color:#fff;padding:1rem 2rem}                        /* 2: no 100vw */
+.container{display:flex;flex-wrap:wrap;gap:1.5rem;max-width:1100px;margin:0 auto;padding:1rem}  /* 3 */
+.sidebar{flex:1 1 240px;padding:20px;border:5px solid #0f766e;background:#ccfbf1}  /* 4 */
+.content{flex:3 1 480px;min-width:0}                                         /* 5: min-width:0 lets children shrink */
+.card{padding:30px;margin-bottom:20px;background:#fff;border:1px solid #cbd5e1;overflow-x:auto}
+img{max-width:100%;height:auto;display:block}                                /* 7 */
+pre{background:#0f172a;color:#e2e8f0;padding:10px;overflow-x:auto;white-space:pre-wrap}  /* 8 */
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid #cbd5e1;padding:8px}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechShelf store home page built entirely with CSS Grid: header, hero, bento category tiles, product grid, newsletter and footer.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>TechShelf — Grid Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head">
+  <a class="logo" href="#">TechShelf</a>
+  <nav aria-label="Main"><a href="#cats">Categories</a> <a href="#featured">Featured</a> <a href="#news">Newsletter</a></nav>
+  <a class="cart" href="#">Cart (0)</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__text">
+      <h1>Gear that earns its place on your desk</h1>
+      <p>Tested laptops, audio and accessories for students and makers. Free delivery over ₹999.</p>
+      <p><a class="btn" href="#featured">Shop featured</a></p>
+    </div>
+    <div class="hero__collage" aria-hidden="true">
+      <div class="tile t1">💻</div><div class="tile t2">🎧</div><div class="tile t3">⌚</div>
+    </div>
+  </section>
+
+  <section id="cats" class="section" aria-labelledby="cats-h">
+    <h2 id="cats-h">Shop by category</h2>
+    <ul class="cats">
+      <li class="cat cat--big"><a href="#"><span aria-hidden="true">💻</span> Laptops</a></li>
+      <li class="cat "><a href="#"><span aria-hidden="true">🎧</span> Audio</a></li>
+      <li class="cat "><a href="#"><span aria-hidden="true">⌚</span> Wearables</a></li>
+      <li class="cat cat--wide"><a href="#"><span aria-hidden="true">📷</span> Cameras</a></li>
+      <li class="cat "><a href="#"><span aria-hidden="true">🎮</span> Gaming</a></li>
+    </ul>
+  </section>
+
+  <section id="featured" class="section" aria-labelledby="feat-h">
+    <h2 id="feat-h">Featured this week</h2>
+    <ul class="prods">
+      <li class="prod"><div class="prod__img" aria-hidden="true">🎧</div><h3>Studio Headphones</h3><p>₹4,999</p></li>
+      <li class="prod"><div class="prod__img" aria-hidden="true">⌚</div><h3>Fit Band 5</h3><p>₹2,499</p></li>
+      <li class="prod"><div class="prod__img" aria-hidden="true">⌨️</div><h3>Compact Keyboard</h3><p>₹1,799</p></li>
+      <li class="prod"><div class="prod__img" aria-hidden="true">🔋</div><h3>Fast Charger 65W</h3><p>₹1,299</p></li>
+    </ul>
+  </section>
+
+  <section id="news" class="news">
+    <div><h2>Get the weekly deal list</h2><p>One email every Friday. Unsubscribe any time.</p></div>
+    <form action="#" method="post"><label for="em">Email address</label><input type="email" id="em" name="em" placeholder="you@example.com" required><button type="submit">Subscribe</button></form>
+  </section>
+</main>
+
+<footer class="foot">
+  <div><strong>TechShelf</strong><p>Practice store for a CSS Grid project.</p></div>
+  <ul><li><strong>Shop</strong></li><li><a href="#">Laptops</a></li><li><a href="#">Audio</a></li></ul>
+  <ul><li><strong>Help</strong></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li></ul>
+  <ul><li><strong>Company</strong></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li></ul>
+</footer>
+</body>
+</html>

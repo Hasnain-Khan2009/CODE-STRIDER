@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Example page with horizontal overflow caused by fixed widths, missing box-sizing, wide images and long unbreakable text.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Broken Layout (overflow)</title>
+  <link rel="stylesheet" href="broken.css">
+</head>
+<body>
+<header class="top"><h1>Weekly Dashboard</h1></header>
+<div class="container">
+  <aside class="sidebar">
+    <h2>Links</h2>
+    <p>Short link: <a href="#">https://example.com/this-is-a-very-long-address-that-never-wraps-anywhere/because-it-has-no-spaces-in-it</a></p>
+  </aside>
+  <main class="content">
+    <article class="card">
+      <h2>Hero image</h2>
+      <img src="images/banner.svg" alt="Wide teal banner with white bars representing weekly activity" width="1200" height="300">
+    </article>
+    <article class="card">
+      <h2>Last command</h2>
+      <pre>git commit -m "feat: add the very long commit message that keeps going and going beyond the box"</pre>
+    </article>
+    <article class="card">
+      <h2>Marks</h2>
+      <table>
+        <thead><tr><th>Subject</th><th>Unit 1</th><th>Unit 2</th><th>Unit 3</th><th>Unit 4</th><th>Unit 5</th><th>Unit 6</th><th>Total</th></tr></thead>
+        <tbody><tr><td>Web Technologies</td><td>18</td><td>17</td><td>19</td><td>20</td><td>16</td><td>18</td><td>108</td></tr></tbody>
+      </table>
+    </article>
+  </main>
+</div>
+</body>
+</html>

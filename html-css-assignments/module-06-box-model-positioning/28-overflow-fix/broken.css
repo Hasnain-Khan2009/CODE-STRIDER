@@ -1,0 +1,11 @@
+/* BROKEN: causes horizontal scrolling and clipped content */
+body{margin:0;font-family:Arial,sans-serif;background:#f8fafc}
+.top{background:#0f766e;color:#fff;padding:1rem 2rem;width:100vw}          /* 100vw + padding overflows */
+.container{width:1100px;margin:0 auto;overflow:hidden}                       /* fixed width, hides overflow */
+.sidebar{float:left;width:300px;padding:20px;border:5px solid #0f766e;background:#ccfbf1}  /* content-box: really 350px */
+.content{float:left;width:800px;margin-left:-20px}                           /* negative margin pushes it off */
+.card{width:100%;padding:30px;margin-bottom:20px;background:#fff;border:1px solid #cbd5e1}  /* 100% + padding */
+img{width:1200px}                                                            /* wider than the card */
+pre{background:#0f172a;color:#e2e8f0;padding:10px;white-space:pre}           /* never wraps or scrolls */
+table{width:900px;border-collapse:collapse}
+th,td{border:1px solid #cbd5e1;padding:8px;white-space:nowrap}

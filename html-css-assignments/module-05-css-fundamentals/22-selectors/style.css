@@ -1,0 +1,60 @@
+/* Assignment 22 — selector types (each rule is labelled) */
+
+/* 1. Universal selector */
+*, *::before, *::after { box-sizing: border-box; }
+
+/* 2. Type (element) selector */
+body { margin: 0; font-family: system-ui, "Segoe UI", Arial, sans-serif; line-height: 1.6; color: #1e293b; background: #f1f5f9; }
+main { max-width: 760px; margin: 0 auto; padding: 1rem; }
+
+/* 3. Grouping selector */
+h1, h2 { font-family: Georgia, "Times New Roman", serif; color: #0f766e; margin-top: 0; }
+
+/* 4. ID selector */
+#page-header { background: #0f766e; color: #fff; padding: 2rem 1rem; text-align: center; }
+#page-header h1 { color: #fff; margin-bottom: .25rem; }
+
+/* 5. Class selector */
+.card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 1rem; }
+.lead { margin: 0; font-size: 1.1rem; }
+
+/* 6. Descendant selector (any p inside .card) */
+.card p { margin: .5rem 0; }
+
+/* 7. Child selector (only direct children of .menu) */
+.menu > li { padding: .35rem .5rem; list-style: none; }
+.menu { padding: 0; }
+
+/* 8. Pseudo-class: structural */
+.menu > li:nth-child(odd)  { background: #f0fdfa; }
+.menu > li:nth-child(even) { background: #fff; }
+.menu > li:first-child { border-top: 2px solid #0f766e; }
+.menu > li:last-child  { border-bottom: 2px solid #0f766e; }
+
+/* 9. Pseudo-class: user action */
+a:hover { color: #b45309; text-decoration-thickness: 2px; }
+a:focus-visible, input:focus-visible { outline: 3px solid #f59e0b; outline-offset: 2px; }
+
+/* 10. Attribute selectors */
+a[href^="https"]::after { content: " ↗"; }           /* starts with https */
+a[href^="mailto:"]::before { content: "✉ "; }          /* starts with mailto: */
+input[type="email"] { border: 2px solid #0f766e; }     /* exact value */
+input[type="text"]  { border: 2px solid #94a3b8; }
+a[target="_blank"] { font-weight: 600; }
+
+/* 11. Adjacent sibling selector (first element right after h2) */
+h2 + p { font-weight: 700; }
+
+/* 12. General sibling selector (any later sibling) */
+h2 ~ p.note { background: #fef3c7; border-left: 4px solid #f59e0b; padding: .5rem .75rem; }
+
+/* 13. Pseudo-elements */
+.dropcap::first-letter { font-size: 2.6rem; float: left; line-height: 1; padding-right: .4rem; color: #0f766e; font-weight: 700; }
+blockquote { margin: 1rem 0 0; padding-left: 1rem; border-left: 4px solid #0f766e; font-style: italic; }
+blockquote::before { content: "“"; }
+blockquote::after  { content: "”"; }
+
+/* Table, using descendant + pseudo-class */
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #cbd5e1; padding: .4rem .6rem; text-align: left; }
+tbody tr:nth-child(even) { background: #f8fafc; }

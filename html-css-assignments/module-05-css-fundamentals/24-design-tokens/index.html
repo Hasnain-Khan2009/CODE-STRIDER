@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo page for a CSS variable design-token system covering colours, type scale, spacing, radius and shadows.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Design Tokens</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero"><h1>Design Tokens</h1><p>One file, <code>tokens.css</code>, controls the whole look. Change a variable and the page updates everywhere.</p></header>
+<main>
+  <section>
+    <h2>Colours</h2>
+    <ul class="swatches">
+      <li class="swatch swatch--primary">Primary</li>
+      <li class="swatch swatch--primary-light">Primary light</li>
+      <li class="swatch swatch--accent">Accent</li>
+      <li class="swatch swatch--success">Success</li>
+      <li class="swatch swatch--warning">Warning</li>
+      <li class="swatch swatch--danger">Danger</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Type scale</h2>
+    <p class="t-3xl">Heading 3XL</p>
+    <p class="t-2xl">Heading 2XL</p>
+    <p class="t-xl">Heading XL</p>
+    <p class="t-lg">Large text</p>
+    <p>Body text (md)</p>
+    <p class="t-sm">Small text</p>
+    <p class="t-xs">Extra small text</p>
+  </section>
+  <section>
+    <h2>Components built from tokens</h2>
+    <p><button class="btn">Primary</button> <button class="btn btn--ghost">Ghost</button></p>
+    <p class="alert alert--success">Saved successfully.</p>
+    <p class="alert alert--warning">Your session expires in 5 minutes.</p>
+    <p class="alert alert--danger">Could not save. Check the highlighted fields.</p>
+    <article class="card"><h3>Card</h3><p>Radius, shadow and spacing come from tokens.</p></article>
+  </section>
+  <section>
+    <h2>Token reference</h2>
+    <table>
+      <thead><tr><th>Token group</th><th>Examples</th></tr></thead>
+      <tbody>
+        <tr><td>Colour</td><td><code>--color-primary</code>, <code>--color-ink</code></td></tr>
+        <tr><td>Font size</td><td><code>--text-sm</code> … <code>--text-3xl</code></td></tr>
+        <tr><td>Spacing</td><td><code>--space-1</code> … <code>--space-7</code></td></tr>
+        <tr><td>Shape</td><td><code>--radius-md</code>, <code>--shadow-md</code></td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* BEFORE: desktop-only habits (each one is listed in AUDIT.md) */
+body{margin:0;min-width:1024px;font-family:Arial,sans-serif;font-size:14px;line-height:1.2;color:#1e293b}
+.header{width:1000px;height:70px;background:#0f766e;padding:20px 40px}
+.logo{color:#fff;font-size:24px;font-weight:bold;text-decoration:none;margin-right:60px}
+nav{display:inline-block}
+nav a{color:#fff;font-size:12px;padding:2px 4px;margin-right:8px;text-decoration:none}
+.hero{height:600px;background:#0f766e;color:#fff;padding:120px 80px}
+.hero h1{font-size:64px;margin:0 0 20px}
+.btn{display:inline-block;padding:4px 10px;background:#f59e0b;color:#1e293b;text-decoration:none;font-size:12px}
+.products{width:1000px;padding:40px;overflow:hidden}
+.product{float:left;width:300px;height:160px;margin:10px;padding:20px;background:#ccfbf1;border-radius:10px}
+.sizes{clear:both;padding:40px}
+table{width:800px;border-collapse:collapse}
+th,td{border:1px solid #cbd5e1;padding:6px 10px;white-space:nowrap}
+.banner{width:900px;height:240px;margin-top:20px}
+.news{padding:40px}
+.wide-input{width:600px;padding:6px}
+.footer{background:#0f172a;color:#cbd5e1;padding:20px 40px;width:1000px}

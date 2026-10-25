@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CafeBloom café landing page recreated with CSS Grid for page sections and Flexbox for component internals.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#3b2417">
+  <title>CafeBloom — Landing Page (Grid + Flexbox)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="logo" href="#">CafeBloom</a>
+  <nav aria-label="Main"><ul><li><a href="#menu">Menu</a></li><li><a href="#story">Our story</a></li><li><a href="#visit">Visit</a></li></ul></nav>
+  <a class="btn" href="#visit">Reserve a table</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__text">
+      <h1>Slow coffee for fast days</h1>
+      <p>Single-origin beans, fresh bakes and a quiet corner to study.</p>
+      <div class="hero__actions"><a class="btn" href="#menu">See the menu</a><a class="btn btn--ghost" href="#visit">Find us</a></div>
+    </div>
+    <div class="hero__art" aria-hidden="true">☕</div>
+  </section>
+
+  <section id="menu" class="section">
+    <h2>Today’s menu</h2>
+    <ul class="menu">
+    <li class="dish"><div class="dish__head"><h3>Espresso</h3><span class="dish__price">₹120</span></div><p>Double shot, dark roast</p></li>
+    <li class="dish"><div class="dish__head"><h3>Cappuccino</h3><span class="dish__price">₹160</span></div><p>Silky foam, single origin</p></li>
+    <li class="dish"><div class="dish__head"><h3>Cold Brew</h3><span class="dish__price">₹180</span></div><p>Steeped 16 hours</p></li>
+    <li class="dish"><div class="dish__head"><h3>Masala Chai</h3><span class="dish__price">₹90</span></div><p>House spice blend</p></li>
+    <li class="dish"><div class="dish__head"><h3>Blueberry Muffin</h3><span class="dish__price">₹130</span></div><p>Baked every morning</p></li>
+    <li class="dish"><div class="dish__head"><h3>Veg Club Sandwich</h3><span class="dish__price">₹170</span></div><p>Grilled, with pesto</p></li>
+    </ul>
+  </section>
+
+  <section id="story" class="story">
+    <div class="story__art" aria-hidden="true">🌱</div>
+    <div class="story__text">
+      <h2>Roasted in small batches</h2>
+      <p>We buy directly from two family farms and roast every week, so what you drink is never more than ten days old.</p>
+      <ul class="facts"><li><strong>2</strong> farms</li><li><strong>10</strong> day freshness</li><li><strong>100%</strong> compostable cups</li></ul>
+    </div>
+  </section>
+
+  <section id="visit" class="section visit">
+    <div>
+      <h2>Visit us</h2>
+      <address>14 Garden Road, Near City Library</address>
+    </div>
+    <dl class="hours">
+      <div><dt>Mon – Fri</dt><dd>8 AM – 9 PM</dd></div>
+      <div><dt>Saturday</dt><dd>9 AM – 10 PM</dd></div>
+      <div><dt>Sunday</dt><dd>9 AM – 6 PM</dd></div>
+    </dl>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>&copy; 2026 CafeBloom (practice site)</p>
+  <ul><li><a href="#">Instagram</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul>
+</footer>
+</body>
+</html>

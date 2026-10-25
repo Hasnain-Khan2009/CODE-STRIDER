@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A page that demonstrates universal, type, class, ID, grouping, descendant, child, sibling, attribute, pseudo-class and pseudo-element selectors.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>CSS Selector Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="page-header">
+  <h1>CSS Selector Showcase</h1>
+  <p class="lead">Every rule in <code>style.css</code> is labelled with the selector type it demonstrates.</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Menu (child + pseudo-class)</h2>
+    <p>Hover over the links and look at the odd and even rows.</p>
+    <ul class="menu">
+      <li><a href="#attr">Internal link</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">MDN CSS docs</a></li>
+      <li><a href="https://www.w3.org/Style/CSS/" target="_blank" rel="noopener noreferrer">W3C CSS</a></li>
+      <li><a href="mailto:aarav.sharma@example.com">Email me</a></li>
+    </ul>
+  </section>
+
+  <section class="card" id="attr">
+    <h2>Attribute selectors</h2>
+    <p>External links get an arrow, the email field gets a teal border.</p>
+    <p><label for="mail">Email</label> <input type="email" id="mail" placeholder="you@example.com"></p>
+    <p><label for="nm">Name</label> <input type="text" id="nm" placeholder="Your name"></p>
+  </section>
+
+  <section class="card">
+    <h2>Sibling selectors</h2>
+    <p>This paragraph directly follows the heading (adjacent sibling) so it is bold.</p>
+    <p>This is a normal paragraph.</p>
+    <p class="note">This note follows the heading somewhere later (general sibling) so it is highlighted.</p>
+  </section>
+
+  <section class="card">
+    <h2>Pseudo-elements</h2>
+    <p class="dropcap">The first letter of this paragraph is enlarged with <code>::first-letter</code>.</p>
+    <blockquote>Selectors decide which elements a rule applies to.</blockquote>
+  </section>
+
+  <section class="card">
+    <h2>Selector cheat sheet</h2>
+    <table>
+      <thead><tr><th>Selector</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr><td><code>*</code></td><td>Universal</td></tr>
+        <tr><td><code>p</code></td><td>Type</td></tr>
+        <tr><td><code>.card</code></td><td>Class</td></tr>
+        <tr><td><code>#page-header</code></td><td>ID</td></tr>
+        <tr><td><code>.card p</code></td><td>Descendant</td></tr>
+        <tr><td><code>ul &gt; li</code></td><td>Child</td></tr>
+        <tr><td><code>a[href^="https"]</code></td><td>Attribute</td></tr>
+        <tr><td><code>a:hover</code></td><td>Pseudo-class</td></tr>
+        <tr><td><code>p::first-letter</code></td><td>Pseudo-element</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+</body>
+</html>

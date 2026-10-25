@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login form perfectly centred on the page both horizontally and vertically using Flexbox.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Login — Centred with Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="center">
+  <form class="login" action="#" method="post">
+    <h1>Welcome back</h1>
+    <p class="sub">Sign in to continue to your dashboard.</p>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required autocomplete="current-password">
+    <div class="row">
+      <span><input type="checkbox" id="remember" name="remember"> <label class="inline" for="remember">Remember me</label></span>
+      <a href="#">Forgot password?</a>
+    </div>
+    <button type="submit">Sign in</button>
+    <p class="alt">New here? <a href="#">Create an account</a></p>
+  </form>
+</main>
+</body>
+</html>

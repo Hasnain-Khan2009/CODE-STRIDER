@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reusable profile card and product card components built with the box model, border-radius, shadows and positioning.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Profile Card and Product Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <article class="profile">
+    <img class="profile__cover" src="images/cover.svg" alt="Abstract purple and teal hills banner" width="600" height="200">
+    <img class="profile__avatar" src="images/avatar.svg" alt="Avatar of Aarav Sharma" width="96" height="96">
+    <div class="profile__body">
+      <h2>Aarav Sharma</h2>
+      <p class="muted">BCA (AI) · Web developer in training</p>
+      <ul class="stats">
+        <li><strong>45</strong><span>Assignments</span></li>
+        <li><strong>12</strong><span>Repos</span></li>
+        <li><strong>3</strong><span>Badges</span></li>
+      </ul>
+      <p><a class="btn" href="#">Follow</a> <a class="btn btn--ghost" href="#">Message</a></p>
+    </div>
+  </article>
+
+  <article class="product">
+    <span class="product__tag">-20%</span>
+    <img src="images/headphones.svg" alt="Grey illustrated placeholder of wireless over-ear headphones" width="480" height="360">
+    <div class="product__body">
+      <p class="muted">Audio</p>
+      <h2>Wireless Headphones</h2>
+      <p class="price"><s>₹2,499</s> <strong>₹1,999</strong></p>
+      <p>30-hour battery, soft ear cushions and a built-in microphone.</p>
+      <p><a class="btn" href="#">Add to cart</a></p>
+    </div>
+  </article>
+</main>
+</body>
+</html>

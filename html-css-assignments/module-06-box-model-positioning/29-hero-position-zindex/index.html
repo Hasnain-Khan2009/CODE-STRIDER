@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page hero section built with relative, absolute, fixed and sticky positioning and z-index layering.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Hero Section — position and z-index</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="#">Brightpath</a>
+  <nav aria-label="Main"><a href="#features">Features</a> <a href="#pricing">Pricing</a> <a href="#help">Help</a></nav>
+</header>
+
+<section class="hero">
+  <span class="shape shape--one" aria-hidden="true"></span>
+  <span class="shape shape--two" aria-hidden="true"></span>
+  <div class="hero__content">
+    <p class="badge">New: AI study planner</p>
+    <h1>Plan your semester in ten minutes</h1>
+    <p>Turn your syllabus into a weekly study schedule that adapts when exams move.</p>
+    <p><a class="btn" href="#features">Start planning</a></p>
+  </div>
+  <div class="card" aria-label="Sample schedule card">
+    <h2>Today</h2>
+    <ul><li>9:00 Python lab</li><li>11:30 Maths revision</li><li>4:00 HTML practice</li></ul>
+  </div>
+</section>
+
+<section id="features" class="filler"><h2>Features</h2><p>Scroll down: the header stays stuck at the top (<code>position: sticky</code>) and the help button stays in the corner (<code>position: fixed</code>).</p></section>
+<section id="pricing" class="filler alt"><h2>Pricing</h2><p>Free for students.</p></section>
+<section id="help" class="filler"><h2>Help</h2><p>Questions? Use the button at the bottom right.</p></section>
+
+<a class="help-btn" href="#help" aria-label="Get help">?</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact page with an enquiry form, email address and office hours table.">
+  <meta name="author" content="Aarav Sharma">
+  <meta name="theme-color" content="#0f766e">
+  <title>Contact — Aarav’s Web Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Aarav’s Web Lab</a>
+  <nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="registration.html">Registration</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</header>
+<main>
+<h1>Contact</h1>
+<address>
+  Email: <a href="mailto:aarav.sharma@example.com">aarav.sharma@example.com</a><br>
+  GitHub: <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">github.com/your-username</a>
+</address>
+<h2>Send a message</h2>
+<form action="#" method="post" class="contact-form">
+  <p><label for="cname">Your name</label><br><input type="text" id="cname" name="cname" required></p>
+  <p><label for="cemail">Your email</label><br><input type="email" id="cemail" name="cemail" required></p>
+  <p><label for="topic">Topic</label><br>
+     <select id="topic" name="topic"><option>General question</option><option>Workshop</option><option>Feedback</option></select></p>
+  <p><label for="msg">Message</label><br><textarea id="msg" name="msg" rows="5" cols="30" required></textarea></p>
+  <p><button type="submit">Send message</button></p>
+</form>
+<h2>Availability</h2>
+<table>
+  <caption>When I usually reply</caption>
+  <thead><tr><th scope="col">Day</th><th scope="col">Time</th></tr></thead>
+  <tbody><tr><td>Monday to Friday</td><td>4 PM – 8 PM</td></tr><tr><td>Saturday</td><td>10 AM – 1 PM</td></tr></tbody>
+</table>
+</main>
+<footer class="site-footer">
+  <p>&copy; 2026 Aarav Sharma. BCA (AI), Semester 1, ABC University.</p>
+</footer>
+</body>
+</html>

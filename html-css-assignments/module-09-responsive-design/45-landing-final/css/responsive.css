@@ -1,0 +1,36 @@
+/* Assignment 45 — responsive rules layered on top of css/style.css (desktop base) */
+
+/* Tablet: 960px and below */
+@media (max-width:960px){
+  .hero{padding:3.5rem 0}
+  .hero__grid,.join__inner{grid-template-columns:1fr;gap:2rem}
+  .hero h1{font-size:2.6rem}
+  .features__grid{grid-template-columns:1fr 1fr}
+  .steps{flex-wrap:wrap}
+  .steps li{flex:1 1 calc(50% - .75rem)}
+  .pricing__grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}
+  .footer__grid{grid-template-columns:1fr 1fr}
+}
+
+/* Phone: 640px and below */
+@media (max-width:640px){
+  .container{padding:0 1.25rem}
+  .section{padding:3rem 0}
+  h2{font-size:1.6rem}
+  .site-header__inner{flex-wrap:wrap;gap:.5rem 1rem}
+  .site-nav{order:3;width:100%;margin-left:0}
+  .site-nav ul{gap:1.1rem;overflow-x:auto;padding-bottom:.25rem}
+  .site-nav a{white-space:nowrap}
+  .site-header .btn{margin-left:auto;padding:.5rem 1rem}
+  .hero h1{font-size:2.1rem}
+  .hero p{font-size:1.05rem}
+  .hero__actions .btn{flex:1 1 100%;text-align:center}
+  .stats__row{flex-direction:column;gap:.5rem}
+  .features__grid,.quotes__grid{grid-template-columns:1fr}
+  .steps li{flex-basis:100%}
+  .join__form{flex-direction:column}
+  .join__form button{width:100%}
+  .footer__grid{grid-template-columns:1fr}
+}
+
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
